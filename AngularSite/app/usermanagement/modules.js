@@ -1,0 +1,2 @@
+﻿define(['controllers/demoController'], function () {
+});
