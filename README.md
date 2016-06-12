@@ -1,5 +1,6 @@
 ### Hoang Nguyen Manh 
 -- Candidate from Vietnam 
+
 -- Email: nguyenmanhhoang91@gmail.com
 ### Demo: User Management
 
@@ -12,6 +13,7 @@
 + AngularJs
 
 **-- Library**
+
 + Autofac for MVC and WebApi
 ------
 For quick demo, I am using Metronic theme for UI:
@@ -40,6 +42,7 @@ http://www.keenthemes.com/preview/metronic/
 
 ###### 2.2.1. Hoang.AwesomeAngularJs.Infrastructure.BusinessLogic
 -- Implement business interfaces.
+
 -- For quick demo, I do not apply repository here so I'm using fake data in one of business logic class.
 
 ###### 2.2.2. Hoang.AwesomeAngularJs.Infrastructure.Repositories
@@ -50,21 +53,30 @@ http://www.keenthemes.com/preview/metronic/
 
 ##### 2.3. Clients
 ![User Management module](user-management.png)
+
 -- Clients shares the same business logics, repositories.
+
 -- Only one feature available: 
 - [x] Load list of users. 
 
 ###### 2.3.1. Hoang.AwesomeAngularJs.Clients.AngularPage
 ![Frontend structure](frontend-architecture.png)
+
 -- This solution is fully implemented. 
+
 -- Single app page using AngularJs. 
+
 -- Provide Api in the same project.
+
 -- Apply Autofac configuration for reusing business logics.
+
 -- Using AngularJs's default architecture (Module). There are 2 modules: Common (header, footer, sidebar), User Management module.
 
 ###### 2.3.2. Hoang.AwesomeAngularJs.Clients.MVCPage
 -- Website using ASP.NET MVC. 
+
 -- Views, Controllers are not implemented yet. 
+
 -- Apply Autofac configuration.
 
 ##### To be enhanced: 
