@@ -4,14 +4,14 @@
 # Demo: User Management
 
 # 1. Technologies:
-## - Backend
+*- Backend*
 + MVC
 + WebApi
 
-## - FrontEnd
+*- FrontEnd*
 + AngularJs
 
-## - Library
+*- Library*
 + Autofac for MVC and WebApi
 ------
 For quick demo, I am using Metronic theme for UI:
@@ -23,21 +23,28 @@ http://www.keenthemes.com/preview/metronic/
 - Architecture: *Domain Driven Design*
 
 ## 2.1. Core
+
 ### 2.1.1. Hoang.AwesomeAngularJs.Core.BusinessLogic
 - Business interfaces.
+
 ### 2.1.2. Hoang.AwesomeAngularJs.Core.Domain
 - Domain models.
+
 ### 2.1.3. Hoang.AwesomeAngularJs.Core.Repositories
 - Repository interface.
+
 ### 2.1.4. Hoang.AwesomeAngularJs.Core.Crosscutting
 - Common utils/helper class
 
 ## 2.2. Infrastructure:
+
 ### 2.2.1. Hoang.AwesomeAngularJs.Infrastructure.BusinessLogic
 - Implement business interfaces.
 - For quick demo, I do not apply repository here so I'm using fake data in one of business logic class.
+
 ### 2.2.2. Hoang.AwesomeAngularJs.Infrastructure.Repositories
 - Implement repository interface.
+
 ### 2.2.3. Hoang.AwesomeAngularJs.Infrastructure.AutoMapper
 - Store AutoMapper's profiles which process Mapping between domain models and DTO. 
 
@@ -46,8 +53,10 @@ http://www.keenthemes.com/preview/metronic/
 - Clients shares the same business logics, repositories.
 - Only one feature available: 
 - [x] Load list of users. 
+
 ### 2.3.1. Hoang.AwesomeAngularJs.Clients.AngularPage
 - Single app page using AngularJs. 
+
 ### 2.3.2. Hoang.AwesomeAngularJs.Clients.MVCPage
 - Website using ASP.NET MVC. 
 
