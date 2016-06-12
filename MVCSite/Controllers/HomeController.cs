@@ -1,16 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Hoang.AwesomeAngularJs.Core.BusinessLogic;
 using System.Web.Mvc;
 
 namespace MVCSite.Controllers
 {
     public class HomeController : Controller
     {
+        private IUserBusinessLogic _userLogic;
+        public HomeController(IUserBusinessLogic userLogic)
+        {
+            _userLogic = userLogic;
+        }
         public ActionResult Index()
         {
-            return View();
+            return View(_userLogic.GetUsers());
         }
 
         public ActionResult About()
