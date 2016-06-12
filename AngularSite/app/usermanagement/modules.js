@@ -1,2 +1,3 @@
-﻿define(['controllers/demoController'], function () {
+﻿define(['usermanagement/controllers/userController',
+        'usermanagement/services/userService'], function () {
 });

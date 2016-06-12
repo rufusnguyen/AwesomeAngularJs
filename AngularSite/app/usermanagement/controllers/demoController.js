@@ -3,12 +3,11 @@ define(['app'], function (app) {
     var injectParams = ['$mdDialog'];
     var ArchivedObstacleController = function ($mdDialog) {
 
-        //var vm = $scope;
+        var vm = $scope;
 
-        //function init() {
-        //    vm.claimNumber = $stateParams.claimNumber;
+        function init() {
 
-        //}
+        }
 
         var self = this;
 

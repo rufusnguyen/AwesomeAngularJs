@@ -7,7 +7,10 @@
 require(
     [
         'app',
-        'usermanagement/controllers/demoController'
+        'common/controllers/mainController',
+        'common/controllers/DashboardController',
+        'common/directives/directives',
+        'usermanagement/modules',
     ],
     function () {   
         angular.bootstrap(document, ['shopApp']);
